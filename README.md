@@ -7,3 +7,6 @@ The bulk of this code is totally unnecessary!  It is what you get when you start
 
 The main code is maintained in just one file - [connections.js](Europeana-D3/Scripts/app/connections.js).   The file is javascript so it can be used with any technology.  Note that you will need an API key from <a href="http://labs.europeana.eu/api/" target="_blank">Europeana Labs</a> in order to use this application.  Just change the first line of [connections.js](Europeana-D3/Scripts/app/connections.js).
 
+Screenshot:
+
+<img src='https://raw.githubusercontent.com/smoore4moma/europeana-d3/master/Europeana-D3/Content/Images/screenshot.jpg'>
