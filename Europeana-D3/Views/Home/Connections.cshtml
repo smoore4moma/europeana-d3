@@ -1,13 +1,28 @@
 ﻿@{
     ViewBag.Title = "Artist | Museums | Objects";
-    
 }
 <br />
 <div class="row">
+    <p style="float:left;">
+        <svg>
+            <g>
+                <circle cx="50" cy="60" class="node type1" r="8" />
+                <text dx="75" dy="65" font-size="1em" fill="#536870" text-anchor="start">Artist</text>
+            </g>
+            <g>
+                <circle cx="50" cy="90" class="node type2" r="8" />
+                <text dx="75" dy="95" font-size="1em" fill="#536870" text-anchor="start">Museum</text>
+            </g>
+            <g>
+                <circle cx="50" cy="120" class="node type3" r="8" />
+                <text dx="75" dy="125" font-size="1em" fill="#536870" text-anchor="start">Object (click to view)</text>
+            </g>
+        </svg>
+    </p>
     <div id="search-artist">
         <div class="input-group">
             <span>
-                <select class="form-control" id="search-results" >
+                <select class="form-control" id="search-results">
                     <option selected value="5"># of results</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
