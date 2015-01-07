@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Artist | Museums | Objects";
+    
+}
+<br />
+<div class="row">
+    <div id="search-artist">
+        <div class="input-group">
+            <span>
+                <select class="form-control" id="search-results" >
+                    <option selected value="5"># of results</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="4">4</option>
+                    <option value="8">8</option>
+                    <option value="12">12</option>
+                    <option value="24">24</option>
+                </select>
+            </span>
+            <input type="text" class="form-control" id="tbSearchArtist" placeholder="Artist search...">
+            <span class="input-group-btn">
+                <button class="btn btn-default" id="btnSearch" type="submit" onclick="getResults()">Go!</button>
+            </span>
+        </div>
+    </div>
+</div>
+<div id="graphic"></div>
+<script src="~/Scripts/d3.v3.min.js"></script>
+<script src="~/Scripts/jsonpath.js"></script>
+<script src="~/Scripts/app/connections.js"></script>
+
+
