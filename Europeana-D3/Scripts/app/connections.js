@@ -18,17 +18,15 @@ function getResults() {
 
     q = encodeURIComponent(searchArtist.value);  // encode the search query
 
-    q.replace('%20', '+AND+')
-
     var searchCount = document.getElementById("search-results");
     rows = searchCount.options[searchCount.selectedIndex].value;
 
-    window.location = window.location.href.split('?')[0] + '?q=' + q + '&rows=' + rows;
+    window.location.href = window.location.href.split('?')[0] + '?q=' + q + '&rows=' + rows;
 }
 
 // Set a default result
 if (q === undefined) {
-    q = "richard+AND+serra"
+    q = "richard serra"
 }
 
 // Set a default result
@@ -36,7 +34,7 @@ if (rows === undefined || rows === 0) {
     rows = "5";
 }
 
-var url = "http://europeana.eu/api/v2/search.json?query=who%3A+" + q + "&start=1&rows=" + rows + "&profile=standard&qf=TYPE:IMAGE&wskey=" + wskey;
+var url = "http://europeana.eu/api/v2/search.json?query=who:(" + q + ")&start=1&rows=" + rows + "&profile=standard&qf=TYPE:IMAGE&wskey=" + wskey;
 var nodes = [];
 var links = [];
 var providers = [];
