@@ -104,8 +104,8 @@ d3.json(url, function (json) {
     }
 
     var w = 1000,
-        h = 800,
-        radius = d3.scale.log().domain([0, 312000]).range(["10", "50"]);
+        h = 600;
+        //radius = d3.scale.log().domain([0, 312000]).range(["10", "50"]);
 
     var vis = d3.select("#graphic").append("svg:svg")
         .attr("width", w)
