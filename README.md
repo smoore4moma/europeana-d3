@@ -1,4 +1,7 @@
 # europeana-d3
+
+IMPORTANT:  Europeana changed their API, so this example no longer works without tweaking variable names.
+
 A d3.js implementation using the Europeana API
 
 This is the code used to create this demo: <a href="http://www.europeana-d3.info" target="_blank">www.europeana-d3.info</a>
