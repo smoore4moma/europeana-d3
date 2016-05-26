@@ -34,7 +34,7 @@ if (rows === undefined || rows === 0) {
     rows = "5";
 }
 
-var url = "http://europeana.eu/api/v2/search.json?query=who:(" + q + ")&start=1&rows=" + rows + "&profile=standard&qf=TYPE:IMAGE&wskey=" + wskey;
+var url = "http://www.europeana.eu/api/v2/search.json?query=who:(" + q + ")&start=1&rows=" + rows + "&profile=standard&qf=TYPE:IMAGE&wskey=" + wskey;
 var nodes = [];
 var links = [];
 var providers = [];
